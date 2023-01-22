@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peaky blinders-SAKTHI'page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="images/x-favicon" href="logo35.png">
+</head>
+
+<body>
+    <div class="header">
+        <video autoplay loop id="backvideo">
+               <source src="PB.mp4" type="video/mp4">
+           </video>
+        <nav>
+            <div class="logo">
+                <img src="logo35.png">
+            </div>
+            <div class="nav_links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Plans</a></li>
+                    <li><a href="#">Stream</a></li>
+                    <li><a href="#">More</a></li>
+                </ul>
+            </div>
+            <a href="#" id="wbtn"><button id="icon">Watch now</button></a>
+            <img src="down-arrow.png" id="down">
+
+        </nav>
+        <div class="di">
+            <h3 contenteditable="true">&#128151Sakthi</h3>
+        </div>
+        <div class="txt">
+            <h1 class="slide_left">Peaky <br> Blinders</h1>
+            <p class="slide_left">Peaky Blinders is a British period crime drama television series<br>&nbspcreated by Steven Knight.Set in Birmingham, England.</p>
+            <h4 class="slide_left">Tommy Shelby - "Everyone's a whore , Grace".😎</h4>
+        </div>
+    </div>
+
+    <script>
+        var backvideo = document.getElementById('backvideo');
+        var wbtn = document.getElementById('wbtn');
+        var icon = document.getElementById('icon');
+
+        wbtn.onclick = function() {
+            backvideo.style.display = "block";
+
+            if (backvideo.paused) {
+                backvideo.play();
+                down.src = "close.png";
+            } else {
+                icon.src = "down-arrow.png";
+            }
+        }
+        down.onclick = function() {
+            backvideo.style.display = "none";
+            down.src = "down-arrow.png";
+            backvideo.pause();
+        }
+    </script>
+</body>
+
+</html>
